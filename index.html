@@ -6,29 +6,102 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Fanny Zamora</div>
-        <div>
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div> 
-        <h1 id="about">About me</h1>
-        <p>
-             I just graduated from a French engineering school called INSA Lyon as an Electrical Engineer,
-             specialized in Microelectronics. I was an apprentice during my 3 years at INSA, in the railway company
-             Alstom where I worked as an industrial test engineer. Recently, I did a 6-month internship at
-             ASML in the Netherlands, where I took on the role of electrical and firmware engineer.
-        </p>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">Homepage</div>
+            <div>
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <h2> Fanny Zamora  </h2>
+        <h3> Electronics Engineer in Toronto</h3>
+        <a href="#contact">Download my resume here !</a>
     </div>
+
+    <section id="about"> 
+        <h2>About me</h2>
+        <div>
+            <picture>
+                <source srcset=""
+            </picture>
+        </div>
+        <div>
+            <p>
+                I just graduated from a French engineering school called INSA Lyon as an Electrical Engineer,
+                specialized in Microelectronics. I was an apprentice during my 3 years at INSA, in the railway company
+                Alstom where I worked as an industrial test engineer. Recently, I did a 6-month internship at
+                ASML in the Netherlands, where I took on the role of electrical and firmware engineer.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="experience">
+        <h1> My Experience </h1>
+        <div class="">
+            <div class="">
+                <h4>Engineering School</h4>
+                <h5>INSA Lyon - 2022/2025</h5>
+                <p>Master's degree in Electrical Engineering</p>
+            </div>
+
+            <div class="">
+                <h4>Test Equipment Engineer</h4>
+                <h5>Alstom Villeurbanne - 2022/2025</h5>
+                <p>Apprenticeship for 3 years in the Industrial Test Team</p>
+            </div>
+
+            <div class="">
+                <h4>Electronics and Firmware Engineer</h4>
+                <h5>ASML Veldhoven - 2025</h5>
+                <p>6-month internship in the EUV Drive Laser Controls Team</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1> My Projects </h1>
+        <div class ="">
+            <h4>Standardisation and improvement of test benches' self-test</h4>
+            <p>Skills : TestStand, LabVIEW</p>
+        </div>
+        
+        <div class ="">
+            <h4>Development of a pre-emphasis card</h4>
+            <p>Skills : LTSpice, prototyping, Python </p>
+        </div>
+
+        <div class ="">
+            <h4>Implementation of Ping-Pong method on FPGA</h4>
+            <p>Skills : VHDL (dev and testbench), Python </p>
+        </div>
+    </section>
+
+    <section id="#contact">
+        <h1>Contact</h1>
+        <h4>Find me on</h4>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/fanny-zamora/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/fannyzamora" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
