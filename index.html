@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav id="desktop-nav">
-            <div class="logo">Homepage</div>
+            <div class="logo" href="logo">Homepage</div>
             <div>
                 <ul class="nav-list">
                     <li><a href="#about">About</a></li>
@@ -25,25 +25,30 @@
             </div>
         </nav>
     </header>
-    <div>
-        <h2> Fanny Zamora  </h2>
-        <h3> Electronics Engineer in Toronto</h3>
-        <a href="#contact">Download my resume here !</a>
+    <div class="intro">
+        <div class="basic-info">
+            <h2 id="my-name"> <span class="twinkle">✦</span> Hi ! I'm Fanny Zamora <span class="twinkle">✦</span></h2>
+            <h3> Electronics Engineer in Toronto</h3>
+            <p><a href="#contact">Download my resume here !</a></p>
+        </div>
+        <div id="me-pic">
+            <img src="https://media.licdn.com/dms/image/v2/C4D03AQGY-8uNgEI2wQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1667988658862?e=2147483647&v=beta&t=nv2gdlUDOvCwAawBI2gV4CB7sgXzNE8zr-6AKyl_ZYU">
+        </div>
     </div>
 
     <section id="about"> 
         <h2>About me</h2>
         <div>
             <picture>
-                <source srcset=""
+                <source srcset="">
             </picture>
         </div>
-        <div>
+        <div id="about-paragraph">
             <p>
                 I just graduated from a French engineering school called INSA Lyon as an Electrical Engineer,
                 specialized in Microelectronics. I was an apprentice during my 3 years at INSA, in the railway company
-                Alstom where I worked as an industrial test engineer. Recently, I did a 6-month internship at
-                ASML in the Netherlands, where I took on the role of electrical and firmware engineer.
+                Alstom where I worked as an test equipment engineer. Today I live in Toronto and I'm looking for a new opportunity
+                to apply my skills and expand my knowledge, especially in software and verification.
             </p>
         </div>
 
@@ -90,7 +95,7 @@
         </div>
     </section>
 
-    <section id="#contact">
+    <section id="contact">
         <h1>Contact</h1>
         <h4>Find me on</h4>
         <div class="social-links">
@@ -99,6 +104,12 @@
             </a>
             <a href="https://github.com/fannyzamora" target="_blank">
                 <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+        <div id="my-cv">
+            <a href="assets/Resume_Fanny_Zamora.pdf" target="_blank" download>
+                <i class="fa-solid fa-download"></i>
             </a>
         </div>
     </section>

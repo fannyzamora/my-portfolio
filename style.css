@@ -1,0 +1,173 @@
+
+/* Base Styles */
+:root {
+    --text-color: #1a1c20;
+    --link-color: #ffffff;
+    --background-color: #eeeff1;
+    font-size: 17px; /* Set the base font size */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Adjust this value based on the height of your nav bar */
+}
+
+body {
+    font-family: 'Steph', sans-serif;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav {
+    background-color: #303446;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.125rem;
+    height: 3.5rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #303446;
+    backdrop-filter: blur(5px);
+}
+
+nav .logo {
+    color:#ca9ee6;
+}
+
+nav .nav-list {
+    list-style: none;          /* removes bullet points */
+    display: flex;             /* makes items horizontal */
+    gap: 2rem;                 /* spacing between items */
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-list li a {
+    text-decoration: none;
+    color: #ca9ee6;              /* adjust to your theme */
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+nav .nav-list li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #e5c890;
+    transition: width 0.3s ease;         /* hover color */
+}
+
+nav .nav-list li a:hover::after {
+    width: 100%;
+}
+
+/* General Section Styles */
+section {
+    padding: 8rem 2rem;
+    min-height: 80vh; /* Reduce the default minimum height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section:nth-of-type(odd) {
+    background-color: #f8f8f8; /* Light gray for odd sections */
+}
+
+section:nth-of-type(even) {
+    background-color: #ffffff; /* White for even sections */
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 3.5rem;
+    flex-wrap: wrap; /* makes it responsive */
+    background-color: whitesmoke;
+}
+
+.basic-info {
+    text-align: center;
+    color : #303446;
+}
+
+.basic-info #my-name {
+    color : #303446;
+}
+
+.twinkle {
+  display: inline-block;
+  color: #C98DE2;          /* pastel color */
+  animation: twinkle 2s infinite ease-in-out;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;        /* adjust size as needed */
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.5; /* Start with partial opacity */
+  }
+  50% {
+    opacity: 1; /* Fully visible at half-way point */
+  }
+  100% {
+    opacity: 0.5; /* Return to partial opacity */
+  }
+}
+
+.basic-info a {
+    font-size: 16px;
+    font-style: italic ;
+}
+
+#me-pic img {
+    width: 200px;              /* or whatever size fits */
+    height: 200px;
+    border-radius: 50%;        /* makes it a circle */
+    object-fit: cover;         /* ensures image fills the circle */
+    border: 2px solid #303446; /* optional border */
+    box-shadow: 6px 6px 0 #ca9ee6; /* soft shadow */
+    display: block;
+    margin: 5rem auto;         /* centers the image horizontally */
+}
+
+/* About section */
+#about {
+    background-color: #303446;   /* contrast color */
+    color: white;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    padding: 2rem 2rem;
+}
+
+#about h2 {
+    color : #ca9ee6;
+    margin-bottom: 1rem;
+}
+
