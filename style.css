@@ -27,6 +27,8 @@ a {
     text-decoration: none;
 }
 
+/* Nav Style */
+
 nav {
     background-color: #303446;
     display: flex;
@@ -81,10 +83,10 @@ nav .nav-list li a:hover::after {
 section {
     padding: 8rem 2rem;
     min-height: 80vh; /* Reduce the default minimum height */
-    display: flex;
-    flex-direction: column;
+    
+    /* flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     gap: 2rem;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -98,6 +100,7 @@ section:nth-of-type(even) {
     background-color: #ffffff; /* White for even sections */
 }
 
+/* Homepage Section Style */
 .intro {
     display: flex;
     align-items: center;
@@ -110,11 +113,13 @@ section:nth-of-type(even) {
 
 .basic-info {
     text-align: center;
+    font-size: 20px;
     color : #303446;
 }
 
 .basic-info #my-name {
     color : #303446;
+    font-size: 40px;
 }
 
 .twinkle {
@@ -143,8 +148,8 @@ section:nth-of-type(even) {
 }
 
 #me-pic img {
-    width: 200px;              /* or whatever size fits */
-    height: 200px;
+    width: 250px;              /* or whatever size fits */
+    height: 250px;
     border-radius: 50%;        /* makes it a circle */
     object-fit: cover;         /* ensures image fills the circle */
     border: 2px solid #303446; /* optional border */
@@ -153,21 +158,45 @@ section:nth-of-type(even) {
     margin: 5rem auto;         /* centers the image horizontally */
 }
 
-/* About section */
+/* About Section Style */
 #about {
-    background-color: #303446;   /* contrast color */
-    color: white;
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
-    padding: 2rem 2rem;
+    background-color: #303446;
+    color: #303446;
+    padding: 3rem 0;
 }
 
 #about h2 {
-    color : #ca9ee6;
+    color: #ca9ee6;
     margin-bottom: 1rem;
+    margin-left: 3rem;
+    text-align: left;
+    width: 100%;
+    font-size : 40px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 3.5rem;
+    flex-wrap: nowrap; /* makes it responsive */
+}
+
+#about-paragraph{
+    color : white;
+    font-size: 20px;
+    background-color: #ca9ee6;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-right: 2rem;
+}
+
+#about-pic img {
+    width: 400px;
+    height: auto;
+    border-radius: 4rem;
+    margin-left : 2rem;
+    border: 2px solid #ca9ee6;
 }
 
