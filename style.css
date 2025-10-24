@@ -81,7 +81,7 @@ nav .nav-list li a:hover::after {
 
 /* General Section Styles */
 section {
-    padding: 8rem 2rem;
+    padding: 4rem 2rem;
     min-height: 80vh; /* Reduce the default minimum height */
     
     /* flex-direction: column;
@@ -200,3 +200,57 @@ section:nth-of-type(even) {
     border: 2px solid #ca9ee6;
 }
 
+/* Experience Section Style */
+#experience{
+    background-color: #ca9ee6;
+}
+
+#experience h2 {
+    color: #303446;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    font-size : 40px;
+}
+
+.experience-content {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    gap : 2rem;
+}
+
+.experience-card {
+    flex : 1;
+    height : auto;
+    border-radius: 1rem;
+    border: 2px solid #303446;
+    padding: 1rem;
+}
+
+.experience-card h4 {
+    padding-bottom: 0.5rem;
+}
+
+.experience-card h5 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.experience-card img {
+    width: 200px;
+    height: auto;
+}
+
+.decorations {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    gap : 19rem;
+    padding-left: 8.5rem;
+    padding-top: 3rem;
+}
+
+.star{
+    font-size: 40px;
+}
