@@ -178,22 +178,30 @@ section:nth-of-type(even) {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 6rem;
     margin-top: 3.5rem;
     flex-wrap: nowrap; /* makes it responsive */
 }
 
-#about-paragraph{
-    color : white;
+#about-paragraph {
+    display: flex;                 /* make it a flex container */
+    align-items: center;           /* vertically center text */
+    justify-content: center;       /* horizontally center content (optional) */
+    
+    color: white;
     font-size: 20px;
     background-color: #ca9ee6;
     border-radius: 1rem;
     padding: 1.5rem;
-    margin-right: 2rem;
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;  
+    margin-right: 2rem;            /* keep the text left-aligned */
 }
 
 #about-pic img {
-    width: 400px;
+    width: auto;
+    max-width: 500px;
     height: auto;
     border-radius: 4rem;
     margin-left : 2rem;
@@ -253,4 +261,10 @@ section:nth-of-type(even) {
 
 .star{
     font-size: 40px;
+}
+
+/* Projects Section Style */
+
+#projects {
+    background-color: #303446;
 }
